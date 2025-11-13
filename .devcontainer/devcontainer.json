@@ -1,0 +1,18 @@
+{
+    "name": "Laba",
+    "dockerFile": "Dockerfile",
+    "context": "..",
+    "appPort": [],
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "ms-vscode.cmake-tools",
+                "llvm-vs-code-extensions.vscode-clangd"
+            ],
+            "settings": {
+                "terminal.integrated.shell.linux": "/bin/bash",
+                "clangd.path": "/usr/bin/clangd"
+            }
+        }
+    }
+}
