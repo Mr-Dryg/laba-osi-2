@@ -10,10 +10,16 @@ typedef struct
     ull size;
 } matrix;
 
-matrix* create_matrix(ull columns, ull rows);
+matrix* create_matrix(ull rows, ull columns);
 
 int set_value(matrix* mat, ull index, double value);
 
 int get_value(matrix* mat, ull index, double* value);
 
-void delete_matrix(matrix* mat);
+void destroy_matrix(matrix* mat);
+
+matrix* load_matrix_from_file(const char* filename);
+
+void save_matrix_in_file(matrix* mat, const char* filename);
+
+matrix* copy_matrix(matrix* mat);
