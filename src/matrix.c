@@ -106,7 +106,6 @@ matrix* load_matrix_from_file(const char* filename)
 
 void save_matrix_in_file(matrix* mat, const char* filename)
 {
-    mkdir("res", 0755);
     FILE* file = fopen(filename, "w");
     if (!file)
     {

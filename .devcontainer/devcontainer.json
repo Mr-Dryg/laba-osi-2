@@ -7,11 +7,16 @@
         "vscode": {
             "extensions": [
                 "ms-vscode.cmake-tools",
-                "llvm-vs-code-extensions.vscode-clangd"
+                "llvm-vs-code-extensions.vscode-clangd",
+                "ms-python.vscode-pylance",
+                "ms-python.python",
+                "ms-python.debugpy",
+                "ms-python.vscode-python-envs"
             ],
             "settings": {
                 "terminal.integrated.shell.linux": "/bin/bash",
-                "clangd.path": "/usr/bin/clangd"
+                "clangd.path": "/usr/bin/clangd",
+                // "python.defaultInterpreterPath": "/opt/venv/bin/python"
             }
         }
     }
